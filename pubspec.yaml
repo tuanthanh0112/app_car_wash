@@ -35,6 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  google_fonts: ^5.1.0
+  flutter_onboarding_slider: ^1.0.9
+#  flutter_native_splash: ^2.3.1
 
 dev_dependencies:
   flutter_test:
@@ -46,10 +49,22 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.3.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+flutter_native_splash:
+  color: "#42a5f5"
+  color_dark: "#42a5f5"
+  image: assets/logo/icon_logo.jpg
+  image_dark: assets/logo/icon_logo.jpg
 
+  android_12:
+    image: assets/logo/icon_logo.jpg
+    icon_background_color: "#42a5f5"
+    image_dark: assets/logo/icon_logo.jpg
+    icon_background_color_dark: "#42a5f5"
+  web: false
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -59,7 +74,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+      - assets/images/
+      - assets/logo/
+      - assets/images/on_boarding_images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
